@@ -17,18 +17,18 @@ jobs:
         with:
           fetch-depth: 0  # Get complete history for merging
 
-      - name: Add upstream remote
+      - name: Add upstream remote # CHANGE THE REPO WHEN MIGRATING THIS WORKFLOW
         run: |
           git remote add upstream https://github.com/qgustavor/mkv-extract.git
           git fetch upstream
 
-      - name: Merge upstream changes
+      - name: Merge upstream changes # CHANGE WHERE IT SAYS MAIN TWICE
         run: |
           git config --global user.name "GitHub Actions"
           git config --global user.email "actions@github.com"
           
           # Try to merge - this will fail if there are conflicts
-          git checkout repo
+          git checkout main
           git merge upstream/main --no-ff --no-edit --strategy-option=theirs
 
       - name: Push changes
