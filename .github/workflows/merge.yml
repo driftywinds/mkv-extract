@@ -29,7 +29,7 @@ jobs:
           
           # Try to merge - this will fail if there are conflicts
           git checkout repo
-          git merge upstream/repo --no-ff --no-edit --strategy-option=theirs
+          git merge upstream/main --no-ff --no-edit --strategy-option=theirs
 
       - name: Push changes
         run: git push origin repo
