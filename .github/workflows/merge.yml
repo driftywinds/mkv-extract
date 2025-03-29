@@ -22,7 +22,7 @@ jobs:
           git remote add upstream https://github.com/qgustavor/mkv-extract.git
           git fetch upstream
 
-      - name: Merge upstream changes # CHANGE WHERE IT SAYS MAIN TWICE
+      - name: Merge upstream changes # CHANGE THE NAME OF THE BRANCH TWICE
         run: |
           git config --global user.name "GitHub Actions"
           git config --global user.email "actions@github.com"
@@ -32,4 +32,4 @@ jobs:
           git merge upstream/main --no-ff --no-edit --strategy-option=theirs
 
       - name: Push changes
-        run: git push origin repo
+        run: git push origin main # CHANGE THE NAME OF THE BRANCH
