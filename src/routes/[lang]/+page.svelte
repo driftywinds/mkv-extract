@@ -232,6 +232,32 @@
       return fileStatuses.get(file) === 'loaded' && fileResults.get(file)?.parsed?.streams?.some(e => e[selectedSymbol])
     })
   }
+
+  function selectAllStreams () {
+    for (const file of files) {
+      const result = fileResults.get(file)
+      if (result?.parsed?.streams) {
+        for (const stream of result.parsed.streams) {
+          stream[selectedSymbol] = true
+        }
+      }
+    }
+    fileResults = fileResults
+  }
+
+  function deselectAllStreams () {
+    for (const file of files) {
+      const result = fileResults.get(file)
+      if (result?.parsed?.streams) {
+        for (const stream of result.parsed.streams) {
+          stream[selectedSymbol] = false
+        }
+      }
+    }
+    fileResults = fileResults
+  }
+
+  $: hasLoadedFiles = files.some(file => fileStatuses.get(file) === 'loaded')
 </script>
 
 <svelte:head>
@@ -269,6 +295,12 @@
   <Row padding>
     <Column>
       {#if files.length}
+        {#if hasLoadedFiles && $preferences.manualMode}
+          <div class="selection-buttons">
+            <Button kind="ghost" size="small" on:click={selectAllStreams}>{$t('main.select-all')}</Button>
+            <Button kind="ghost" size="small" on:click={deselectAllStreams}>{$t('main.deselect-all')}</Button>
+          </div>
+        {/if}
         <Accordion>
           {#each files as file}
             {@const status = fileStatuses.get(file)}

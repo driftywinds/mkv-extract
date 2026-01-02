@@ -22,6 +22,9 @@ html[theme="g90"] .large-drop {
   margin-top: 1rem;
   margin-left: 0.5rem;
 }
+.selection-buttons {
+  margin-bottom: 0.5rem;
+}
 .mt-2 {
   margin-top: 1rem;
 }

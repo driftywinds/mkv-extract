@@ -13,6 +13,8 @@ file-loading = "Please wait while the {count, plural, =1 {file is} other {files 
 zip-select = "Extract to a zip file"
 folder-select = "Extract to a folder"
 folder-select-tooltip = "Please do NOT select the Downloads folder nor system folders nor any other folder which may contain privacy sensitive content."
+select-all = "Select all"
+deselect-all = "Deselect all"
 
 [streams]
 no-selected-closed = "No streams selected, click on the streams to select them"

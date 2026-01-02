@@ -13,6 +13,8 @@ file-loading = "请稍候，文件正在加载"
 zip-select = "提取到压缩文件"
 folder-select = "提取到文件夹"
 folder-select-tooltip = "请勿选择下载文件夹、系统文件夹或任何可能包含隐私内容的文件夹。"
+select-all = "全选"
+deselect-all = "全不选"
 
 [streams]
 no-selected-closed = "未选择流，点击流以选择它们"
