@@ -13,7 +13,7 @@ file-loading = "Aguarde enquanto {count, plural, =1 {o arquivo está} other {os 
 zip-select = "Extrair para um arquivo ZIP"
 folder-select = "Extrair para uma pasta"
 folder-select-tooltip = "Por favor, NÃO selecione a pasta Downloads, pastas do sistema ou qualquer outra pasta que possa conter conteúdo sensível à privacidade."
-select-all = "Selecionar tudo"
+select-all = "Marcar tudo"
 deselect-all = "Desmarcar tudo"
 
 [streams]
