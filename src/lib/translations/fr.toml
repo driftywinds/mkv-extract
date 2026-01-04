@@ -13,6 +13,8 @@ file-loading = "Veuillez patienter pendant que {count, plural, =1 {le fichier es
 zip-select = "Extraire vers un fichier ZIP"
 folder-select = "Extraire vers un dossier"
 folder-select-tooltip = "Veuillez NE PAS sélectionner le dossier Téléchargements, les dossiers système ou tout autre dossier pouvant contenir des contenus sensibles."
+select-all = "Tout sélectionner"
+deselect-all = "Tout désélectionner"
 
 [streams]
 no-selected-closed = "Aucun flux sélectionné, cliquez sur les flux pour les sélectionner"

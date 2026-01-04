@@ -13,6 +13,8 @@ file-loading = "Por favor, espera mientras {count, plural, =1 {el archivo se est
 zip-select = "Extraer a un archivo ZIP"
 folder-select = "Extraer a una carpeta"
 folder-select-tooltip = "Por favor, NO selecciones la carpeta de Descargas ni carpetas del sistema ni ninguna otra carpeta que pueda contener contenido sensible a la privacidad."
+select-all = "Seleccionar todo"
+deselect-all = "Deseleccionar todo"
 
 [streams]
 no-selected-closed = "No se seleccionaron flujos, haz clic en los flujos para seleccionarlos"
